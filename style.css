@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* ===== RESET & BASE ===== */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 header {
   background: #0b1a2e;
   color: white;
@@ -21,7 +21,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
 }
 
 nav {
@@ -59,7 +59,7 @@ nav {
   transform: translateY(-2px);
 }
 
-/* Sections */
+/* ===== SECTIONS ===== */
 section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -75,7 +75,7 @@ h2 {
   padding-bottom: 0.3rem;
 }
 
-/* Hero */
+/* ===== HERO ===== */
 .hero {
   display: flex;
   align-items: center;
@@ -168,12 +168,12 @@ h2 {
   max-width: 100%;
   max-height: 400px;
   border-radius: 20px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
   object-fit: cover;
   border: 4px solid white;
 }
 
-/* About */
+/* ===== ABOUT ===== */
 #about p {
   font-size: 1.1rem;
   max-width: 700px;
@@ -181,7 +181,7 @@ h2 {
   color: #2e3b4a;
 }
 
-/* Cards */
+/* ===== CARDS ===== */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -193,7 +193,7 @@ h2 {
   background: white;
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
   border-left: 6px solid #66d9ff;
   border-bottom: 2px solid #e8edf3;
@@ -201,7 +201,7 @@ h2 {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   border-left-color: #0b1a2e;
 }
 
@@ -222,7 +222,7 @@ h2 {
   border-left-color: #0b1a2e;
 }
 
-/* Skills */
+/* ===== SKILLS ===== */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -248,12 +248,12 @@ h2 {
   border-color: #66d9ff;
 }
 
-/* Contact */
+/* ===== CONTACT ===== */
 .contact-box {
   background: white;
   padding: 2.5rem;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   max-width: 500px;
   border-left: 6px solid #66d9ff;
 }
@@ -279,7 +279,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
   background: #0b1a2e;
   color: #b0c4d9;
@@ -298,7 +298,7 @@ footer p:last-child {
   font-weight: 500;
 }
 
-/* Responsive */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -339,4 +339,4 @@ footer p:last-child {
   .hero-image img {
     max-height: 280px;
   }
-  }
+}
