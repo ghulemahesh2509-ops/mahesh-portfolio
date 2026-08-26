@@ -1,186 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mahesh Ghule | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mahesh Ghule | ENTC Engineering Student</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <nav>
-    <h2>Mahesh<span>.</span></h2>
+    <nav class="navbar">
+        <div class="logo">Mahesh<span>.</span></div>
 
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="menuBtn">☰</button>
+    </nav>
 </header>
 
+
+<!-- HOME -->
 <section id="home" class="hero">
-  <div class="hero-text">
-    <p class="small">HELLO, I'M</p>
-    <h1>Mahesh <span>Ghule</span></h1>
-    <h2>ENTC Engineering Student</h2>
 
-    <p>
-      Electronics & Telecommunication Engineering student
-      interested in technology, electrical vehicles and solar energy.
-    </p>
+    <div class="hero-text">
+        <p class="small-title">HELLO, I'M</p>
 
-    <div class="buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn second">Contact Me</a>
+        <h1>Mahesh <span>Ghule</span></h1>
+
+        <h2>ENTC Engineering Student</h2>
+
+        <p>
+            Electronics & Telecommunication Engineering student
+            interested in technology, electrical vehicles,
+            solar energy and innovative projects.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
     </div>
-  </div>
 
-  <div class="profile">
-    <img src="IMG_20260804_152019~2.jpg" alt="Mahesh Ghule">
-  </div>
+    <div class="hero-image">
+        <img src="IMG_20260804_152019~2.jpg" alt="Mahesh Ghule">
+    </div>
+
 </section>
 
-<section id="about">
-  <h2 class="title">About <span>Me</span></h2>
 
-  <div class="about-box">
-    <p>
-      Hello! I am Mahesh Ghule, an ENTC Engineering student at
-      Dr. Babasaheb Ambedkar Technological University, Lonere.
-      I am passionate about electronics, electrical technology,
-      web development and innovative engineering projects.
-    </p>
+<!-- ABOUT -->
+<section id="about" class="section">
 
-    <p>
-      My goal is to develop practical technical skills and create
-      useful projects using modern technology.
-    </p>
-  </div>
+    <div class="section-title">
+        <p>GET TO KNOW ME</p>
+        <h2>About Me</h2>
+    </div>
+
+    <div class="about-content">
+
+        <div>
+            <h3>Who I Am</h3>
+
+            <p>
+                Hello! I'm Mahesh Ghule, an ENTC Engineering student
+                passionate about technology and innovation.
+            </p>
+
+            <p>
+                I am interested in electronics, electrical technology,
+                solar energy, electric vehicles and software development.
+            </p>
+
+            <p>
+                My goal is to develop practical technical skills and
+                create useful projects using modern technology.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <div>
+                <strong>ENTC</strong>
+                <span>Engineering Student</span>
+            </div>
+
+            <div>
+                <strong>2026</strong>
+                <span>Current Academic Year</span>
+            </div>
+
+            <div>
+                <strong>5+</strong>
+                <span>Areas of Interest</span>
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
-<section id="education">
-  <h2 class="title">My <span>Education</span></h2>
 
-  <div class="card">
-    <h3>🎓 Dr. Babasaheb Ambedkar Technological University</h3>
-    <p>Lonere, Maharashtra</p>
-    <p><strong>Branch:</strong> Electronics & Telecommunication Engineering (ENTC)</p>
-    <p><strong>Year:</strong> 2026</p>
-  </div>
+<!-- EDUCATION -->
+<section id="education" class="section dark-section">
+
+    <div class="section-title">
+        <p>MY ACADEMIC JOURNEY</p>
+        <h2>Education</h2>
+    </div>
+
+    <div class="education-card">
+
+        <div class="edu-icon">🎓</div>
+
+        <div>
+            <h3>Dr. Babasaheb Ambedkar Technological University</h3>
+
+            <p class="highlight">
+                Lonere, Maharashtra
+            </p>
+
+            <p>
+                Bachelor of Technology – Electronics &
+                Telecommunication Engineering
+            </p>
+
+            <span class="year">2026</span>
+        </div>
+
+    </div>
+
 </section>
 
-<section id="projects">
-  <h2 class="title">My <span>Projects</span></h2>
 
-  <div class="project-container">
+<!-- PROJECTS -->
+<section id="projects" class="section">
 
-    <div class="project-card">
-      <div class="icon">☀️</div>
-      <h3>Solar Pump System</h3>
-      <p>
-        A solar-powered pumping concept designed to use renewable
-        energy for agricultural water pumping applications.
-      </p>
-      <span>Solar Energy</span>
+    <div class="section-title">
+        <p>WHAT I'M BUILDING</p>
+        <h2>My Projects</h2>
     </div>
 
-    <div class="project-card">
-      <div class="icon">🚗</div>
-      <h3>Electric Vehicle</h3>
-      <p>
-        An electric vehicle project focused on electric mobility,
-        battery power and efficient transportation technology.
-      </p>
-      <span>EV Technology</span>
+    <div class="project-grid">
+
+        <div class="project-card">
+            <div class="project-number">01</div>
+
+            <h3>Solar Pump System</h3>
+
+            <p>
+                A solar-powered pumping system designed to use
+                renewable solar energy for water pumping applications.
+            </p>
+
+            <span>☀️ Solar Energy</span>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-number">02</div>
+
+            <h3>Electric Vehicle</h3>
+
+            <p>
+                An electric vehicle project focused on electric
+                mobility, battery power and efficient transportation.
+            </p>
+
+            <span>⚡ EV Technology</span>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-number">03</div>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                A personal portfolio website created using HTML,
+                CSS and JavaScript.
+            </p>
+
+            <span>💻 Web Development</span>
+        </div>
+
     </div>
 
-    <div class="project-card">
-      <div class="icon">💻</div>
-      <h3>Personal Portfolio</h3>
-      <p>
-        A responsive personal portfolio website created using
-        HTML, CSS and JavaScript.
-      </p>
-      <span>Web Development</span>
-    </div>
-
-  </div>
 </section>
 
-<section id="skills">
-  <h2 class="title">My <span>Skills</span></h2>
 
-  <div class="skills">
+<!-- SKILLS -->
+<section id="skills" class="section dark-section">
 
-    <div class="skill">
-      <h3>HTML</h3>
-      <div class="bar"><div style="width:90%"></div></div>
+    <div class="section-title">
+        <p>WHAT I KNOW</p>
+        <h2>My Skills</h2>
     </div>
 
-    <div class="skill">
-      <h3>CSS</h3>
-      <div class="bar"><div style="width:80%"></div></div>
-    </div>
+    <div class="skills">
 
-    <div class="skill">
-      <h3>JavaScript</h3>
-      <div class="bar"><div style="width:65%"></div></div>
-    </div>
-
-    <div class="skill">
-      <h3>Electronics</h3>
-      <div class="bar"><div style="width:85%"></div></div>
-    </div>
-
-    <div class="skill">
-      <h3>Electrical Technology</h3>
-      <div class="bar"><div style="width:75%"></div></div>
-    </div>
-
-  </div>
-</section>
-
-<section id="contact">
-  <h2 class="title">Contact <span>Me</span></h2>
-
-  <div class="contact-box">
-
-    <div>
-      <h3>📧 Email</h3>
-      <a href="mailto:ghulemahesh898@gmail.com">
-        ghulemahesh898@gmail.com
-      </a>
-    </div>
-
-    <div>
-      <h3>📱 Phone</h3>
-      <a href="tel:9421708693">
-        +91 9421708693
-      </a>
-    </div>
-
-    <div>
-      <h3>💻 GitHub</h3>
-      <a href="https://github.com/ghulemahesh2509-ops" target="_blank">
-        GitHub Profile
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Mahesh Ghule. All Rights Reserved.</p>
-  <p>Made with ❤️ using HTML, CSS & JavaScript</p>
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-                           </html>
+        <div class="skill">
+            <div class="skill-top">
+                <span>HTML</span>
+                <span>90%</span>
+            </div>
+            <div class="bar">
+                <div style="width:90
