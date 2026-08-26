@@ -7,17 +7,16 @@
     <title>Mahesh Ghule | ENTC Engineer</title>
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
-            font-family: Arial, sans-serif;
         }
 
         body {
-            background: #070b18;
+            font-family: Arial, sans-serif;
+            background: #060914;
             color: white;
             line-height: 1.6;
         }
@@ -32,9 +31,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(7,11,24,0.92);
+            background: rgba(6, 9, 20, 0.94);
             backdrop-filter: blur(12px);
             z-index: 1000;
+            border-bottom: 1px solid #18223b;
         }
 
         .logo {
@@ -48,8 +48,8 @@
 
         nav ul {
             display: flex;
-            gap: 25px;
             list-style: none;
+            gap: 25px;
         }
 
         nav a {
@@ -70,11 +70,10 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 120px 20px 60px;
-
+            padding: 120px 20px 70px;
             background:
-                radial-gradient(circle at top,
-                rgba(0,217,255,0.12),
+                radial-gradient(circle at 50% 20%,
+                rgba(0,217,255,0.14),
                 transparent 45%);
         }
 
@@ -89,17 +88,13 @@
             object-position: center top;
             border-radius: 50%;
             border: 5px solid #00d9ff;
-
-            box-shadow:
-                0 0 25px rgba(0,217,255,0.5),
-                0 0 70px rgba(0,217,255,0.18);
-
+            box-shadow: 0 0 45px rgba(0,217,255,0.35);
             margin-bottom: 25px;
         }
 
         .hero h1 {
             font-size: 50px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .hero h1 span {
@@ -108,8 +103,8 @@
 
         .hero h2 {
             color: #aaa;
-            margin-bottom: 20px;
             font-size: 23px;
+            margin-bottom: 20px;
         }
 
         .hero p {
@@ -120,12 +115,12 @@
         }
 
         .buttons {
-            margin-top: 30px;
+            margin-top: 28px;
         }
 
         .btn {
             display: inline-block;
-            padding: 13px 27px;
+            padding: 12px 26px;
             margin: 6px;
             border: 1px solid #00d9ff;
             border-radius: 30px;
@@ -136,12 +131,11 @@
 
         .btn:hover {
             background: #00d9ff;
-            color: #07101c;
+            color: #06101a;
             transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,217,255,0.25);
         }
 
-        /* SECTIONS */
+        /* GENERAL */
 
         section {
             padding: 90px 7%;
@@ -160,7 +154,7 @@
         /* ABOUT */
 
         .about {
-            max-width: 900px;
+            max-width: 850px;
             margin: auto;
             text-align: center;
         }
@@ -181,33 +175,30 @@
         .skills {
             max-width: 1050px;
             margin: auto;
-
             display: grid;
             grid-template-columns:
                 repeat(auto-fit, minmax(160px, 1fr));
-
             gap: 20px;
         }
 
         .skill {
-            background: #11182c;
+            background: #10172a;
             border: 1px solid #26304b;
             padding: 25px 15px;
             text-align: center;
-            border-radius: 15px;
+            border-radius: 16px;
             transition: 0.3s;
         }
 
         .skill:hover {
             transform: translateY(-8px);
             border-color: #00d9ff;
-            box-shadow:
-                0 0 25px rgba(0,217,255,0.12);
+            box-shadow: 0 0 25px rgba(0,217,255,0.12);
         }
 
         .skill h3 {
             color: #00d9ff;
-            margin-bottom: 8px;
+            margin-bottom: 7px;
         }
 
         .skill p {
@@ -219,23 +210,15 @@
         .education {
             max-width: 850px;
             margin: auto;
-
-            background: #11182c;
-
-            border-left: 4px solid #00d9ff;
-
             padding: 30px;
-
+            background: #10172a;
+            border-left: 4px solid #00d9ff;
             border-radius: 12px;
-
-            box-shadow:
-                0 10px 35px rgba(0,0,0,0.2);
         }
 
         .education h3 {
             color: #00d9ff;
             margin-bottom: 12px;
-            font-size: 22px;
         }
 
         .education p {
@@ -248,20 +231,17 @@
         .projects {
             max-width: 1050px;
             margin: auto;
-
             display: grid;
-
             grid-template-columns:
                 repeat(auto-fit, minmax(250px, 1fr));
-
             gap: 22px;
         }
 
         .project {
-            background: #11182c;
+            background: #10172a;
             padding: 28px;
-            border-radius: 15px;
             border: 1px solid #26304b;
+            border-radius: 16px;
             transition: 0.3s;
         }
 
@@ -273,19 +253,18 @@
         .project h3 {
             color: #00d9ff;
             margin-bottom: 12px;
-            font-size: 21px;
         }
 
         .project p {
             color: #aaa;
         }
 
-        .project-tag {
+        .tag {
             display: inline-block;
             margin-top: 15px;
-            padding: 5px 12px;
-            border-radius: 20px;
+            padding: 5px 13px;
             border: 1px solid #00d9ff;
+            border-radius: 20px;
             color: #00d9ff;
             font-size: 13px;
         }
@@ -314,7 +293,7 @@
         .career-item {
             padding: 10px 18px;
             border-radius: 25px;
-            background: #11182c;
+            background: #10172a;
             border: 1px solid #26304b;
             color: #00d9ff;
         }
@@ -327,7 +306,7 @@
 
         .contact p {
             color: #bbb;
-            margin: 12px;
+            margin: 13px;
             font-size: 17px;
         }
 
@@ -340,7 +319,7 @@
         footer {
             text-align: center;
             padding: 28px;
-            background: #040711;
+            background: #03050c;
             color: #888;
         }
 
@@ -382,56 +361,30 @@
             }
 
             .title {
-                font-size: 31px;
+                font-size: 30px;
             }
         }
-
     </style>
 </head>
 
 <body>
 
-
     <!-- NAVBAR -->
 
     <nav>
-
         <div class="logo">
             Mahesh<span>.</span>
         </div>
 
         <ul>
-
-            <li>
-                <a href="#home">Home</a>
-            </li>
-
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-                <a href="#education">Education</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#career">Career</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
 
 
@@ -462,15 +415,8 @@
             </p>
 
             <div class="buttons">
-
-                <a href="#about" class="btn">
-                    About Me
-                </a>
-
-                <a href="#contact" class="btn">
-                    Contact Me
-                </a>
-
+                <a href="#about" class="btn">About Me</a>
+                <a href="#contact" class="btn">Contact Me</a>
             </div>
 
         </div>
@@ -491,8 +437,8 @@
             <p>
                 Hello! I'm
                 <span class="highlight">Mahesh Ghule</span>,
-                an Electronics and Telecommunication
-                Engineering graduate from
+                an Electronics and Telecommunication Engineering
+                graduate from
                 <span class="highlight">
                     Dr. Babasaheb Ambedkar Technological University,
                     Lonere
@@ -504,9 +450,8 @@
             <p>
                 I completed my ENTC Engineering in
                 <span class="highlight">2026</span>.
-                I enjoy learning new technologies,
-                developing technical skills and working
-                on practical engineering projects.
+                I am interested in technology, electronics,
+                programming and practical engineering projects.
             </p>
 
         </div>
@@ -611,31 +556,23 @@
 
         <div class="projects">
 
-
             <div class="project">
-
-                <h3>
-                    ☀️ Solar Pump
-                </h3>
+                <h3>☀️ Solar Pump</h3>
 
                 <p>
                     A solar-energy based pumping project
-                    focused on using renewable energy
-                    for efficient water pumping.
+                    focused on renewable energy and
+                    efficient water pumping.
                 </p>
 
-                <span class="project-tag">
+                <span class="tag">
                     Electronics
                 </span>
-
             </div>
 
 
             <div class="project">
-
-                <h3>
-                    ⚡ Electric Vehicle
-                </h3>
+                <h3>⚡ Electric Vehicle</h3>
 
                 <p>
                     An engineering project related to
@@ -643,31 +580,25 @@
                     modern electrical mobility.
                 </p>
 
-                <span class="project-tag">
+                <span class="tag">
                     EV Technology
                 </span>
-
             </div>
 
 
             <div class="project">
-
-                <h3>
-                    💻 Coding Project
-                </h3>
+                <h3>💻 Coding Project</h3>
 
                 <p>
-                    A programming-based project focused
-                    on developing logical and technical
-                    problem-solving skills.
+                    A programming project focused on
+                    logical thinking, coding and
+                    technical problem solving.
                 </p>
 
-                <span class="project-tag">
+                <span class="tag">
                     Programming
                 </span>
-
             </div>
-
 
         </div>
 
@@ -685,9 +616,9 @@
         <div class="career">
 
             <p>
-                I am open to opportunities across
-                technology and engineering domains
-                where I can learn, contribute and grow.
+                I am open to opportunities across technology
+                and engineering domains where I can learn,
+                contribute and grow.
             </p>
 
             <div class="career-box">
@@ -765,14 +696,10 @@
     <!-- FOOTER -->
 
     <footer>
-
         © 2026
         <span>Mahesh Ghule</span>
-        |
-        ENTC Engineer
-
+        | ENTC Engineer
     </footer>
-
 
 </body>
 </html>
