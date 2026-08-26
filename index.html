@@ -1,705 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mahesh Ghule | ENTC Engineer</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #060914;
-            color: white;
-            line-height: 1.6;
-        }
-
-        /* NAVBAR */
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(6, 9, 20, 0.94);
-            backdrop-filter: blur(12px);
-            z-index: 1000;
-            border-bottom: 1px solid #18223b;
-        }
-
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .logo span {
-            color: #00d9ff;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #00d9ff;
-        }
-
-        /* HERO */
-
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 120px 20px 70px;
-            background:
-                radial-gradient(circle at 50% 20%,
-                rgba(0,217,255,0.14),
-                transparent 45%);
-        }
-
-        .hero-content {
-            max-width: 850px;
-        }
-
-        .photo {
-            width: 190px;
-            height: 190px;
-            object-fit: cover;
-            object-position: center top;
-            border-radius: 50%;
-            border: 5px solid #00d9ff;
-            box-shadow: 0 0 45px rgba(0,217,255,0.35);
-            margin-bottom: 25px;
-        }
-
-        .hero h1 {
-            font-size: 50px;
-            margin-bottom: 8px;
-        }
-
-        .hero h1 span {
-            color: #00d9ff;
-        }
-
-        .hero h2 {
-            color: #aaa;
-            font-size: 23px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            color: #bbb;
-            font-size: 18px;
-            max-width: 700px;
-            margin: auto;
-        }
-
-        .buttons {
-            margin-top: 28px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 26px;
-            margin: 6px;
-            border: 1px solid #00d9ff;
-            border-radius: 30px;
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #00d9ff;
-            color: #06101a;
-            transform: translateY(-4px);
-        }
-
-        /* GENERAL */
-
-        section {
-            padding: 90px 7%;
-        }
-
-        .title {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 45px;
-        }
-
-        .title span {
-            color: #00d9ff;
-        }
-
-        /* ABOUT */
-
-        .about {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .about p {
-            color: #bbb;
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        .highlight {
-            color: #00d9ff;
-            font-weight: bold;
-        }
-
-        /* SKILLS */
-
-        .skills {
-            max-width: 1050px;
-            margin: auto;
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(160px, 1fr));
-            gap: 20px;
-        }
-
-        .skill {
-            background: #10172a;
-            border: 1px solid #26304b;
-            padding: 25px 15px;
-            text-align: center;
-            border-radius: 16px;
-            transition: 0.3s;
-        }
-
-        .skill:hover {
-            transform: translateY(-8px);
-            border-color: #00d9ff;
-            box-shadow: 0 0 25px rgba(0,217,255,0.12);
-        }
-
-        .skill h3 {
-            color: #00d9ff;
-            margin-bottom: 7px;
-        }
-
-        .skill p {
-            color: #aaa;
-        }
-
-        /* EDUCATION */
-
-        .education {
-            max-width: 850px;
-            margin: auto;
-            padding: 30px;
-            background: #10172a;
-            border-left: 4px solid #00d9ff;
-            border-radius: 12px;
-        }
-
-        .education h3 {
-            color: #00d9ff;
-            margin-bottom: 12px;
-        }
-
-        .education p {
-            color: #aaa;
-            margin: 6px 0;
-        }
-
-        /* PROJECTS */
-
-        .projects {
-            max-width: 1050px;
-            margin: auto;
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(250px, 1fr));
-            gap: 22px;
-        }
-
-        .project {
-            background: #10172a;
-            padding: 28px;
-            border: 1px solid #26304b;
-            border-radius: 16px;
-            transition: 0.3s;
-        }
-
-        .project:hover {
-            transform: translateY(-8px);
-            border-color: #00d9ff;
-        }
-
-        .project h3 {
-            color: #00d9ff;
-            margin-bottom: 12px;
-        }
-
-        .project p {
-            color: #aaa;
-        }
-
-        .tag {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 5px 13px;
-            border: 1px solid #00d9ff;
-            border-radius: 20px;
-            color: #00d9ff;
-            font-size: 13px;
-        }
-
-        /* CAREER */
-
-        .career {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .career p {
-            color: #bbb;
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-
-        .career-box {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .career-item {
-            padding: 10px 18px;
-            border-radius: 25px;
-            background: #10172a;
-            border: 1px solid #26304b;
-            color: #00d9ff;
-        }
-
-        /* CONTACT */
-
-        .contact {
-            text-align: center;
-        }
-
-        .contact p {
-            color: #bbb;
-            margin: 13px;
-            font-size: 17px;
-        }
-
-        .contact a {
-            color: #00d9ff;
-        }
-
-        /* FOOTER */
-
-        footer {
-            text-align: center;
-            padding: 28px;
-            background: #03050c;
-            color: #888;
-        }
-
-        footer span {
-            color: #00d9ff;
-        }
-
-        /* MOBILE */
-
-        @media (max-width: 700px) {
-
-            nav {
-                padding: 16px 5%;
-            }
-
-            nav ul {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero h2 {
-                font-size: 19px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            .photo {
-                width: 160px;
-                height: 160px;
-            }
-
-            section {
-                padding: 75px 5%;
-            }
-
-            .title {
-                font-size: 30px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahesh Ghule | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-
-    <nav>
-        <div class="logo">
-            Mahesh<span>.</span>
-        </div>
-
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-
-    <!-- HOME -->
-
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <img
-                class="photo"
-                src="IMG_20260804_152019~2.jpg"
-                alt="Mahesh Ghule"
-            >
-
-            <h1>
-                Hi, I'm <span>Mahesh Ghule</span>
-            </h1>
-
-            <h2>
-                Electronics & Telecommunication Engineer
-            </h2>
-
-            <p>
-                ENTC Engineering graduate passionate about
-                technology, electronics, programming and
-                innovative solutions.
-            </p>
-
-            <div class="buttons">
-                <a href="#about" class="btn">About Me</a>
-                <a href="#contact" class="btn">Contact Me</a>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section id="about">
-
-        <h2 class="title">
-            About <span>Me</span>
-        </h2>
-
-        <div class="about">
-
-            <p>
-                Hello! I'm
-                <span class="highlight">Mahesh Ghule</span>,
-                an Electronics and Telecommunication Engineering
-                graduate from
-                <span class="highlight">
-                    Dr. Babasaheb Ambedkar Technological University,
-                    Lonere
-                </span>.
-            </p>
-
-            <br>
-
-            <p>
-                I completed my ENTC Engineering in
-                <span class="highlight">2026</span>.
-                I am interested in technology, electronics,
-                programming and practical engineering projects.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-
-    <section id="skills">
-
-        <h2 class="title">
-            My <span>Skills</span>
-        </h2>
-
-        <div class="skills">
-
-            <div class="skill">
-                <h3>C</h3>
-                <p>Programming</p>
-            </div>
-
-            <div class="skill">
-                <h3>C++</h3>
-                <p>Programming</p>
-            </div>
-
-            <div class="skill">
-                <h3>HTML</h3>
-                <p>Web Development</p>
-            </div>
-
-            <div class="skill">
-                <h3>CSS</h3>
-                <p>Web Design</p>
-            </div>
-
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <p>Web Programming</p>
-            </div>
-
-            <div class="skill">
-                <h3>Python</h3>
-                <p>Programming</p>
-            </div>
-
-            <div class="skill">
-                <h3>Electronics</h3>
-                <p>ENTC Core</p>
-            </div>
-
-            <div class="skill">
-                <h3>Communication</h3>
-                <p>Professional Skill</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- EDUCATION -->
-
-    <section id="education">
-
-        <h2 class="title">
-            My <span>Education</span>
-        </h2>
-
-        <div class="education">
-
-            <h3>
-                B.E. Electronics & Telecommunication Engineering
-            </h3>
-
-            <p>
-                Dr. Babasaheb Ambedkar Technological University,
-                Lonere
-            </p>
-
-            <p>
-                Branch: Electronics & Telecommunication Engineering
-            </p>
-
-            <p>
-                Graduation Year: 2026
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-
-    <section id="projects">
-
-        <h2 class="title">
-            My <span>Projects</span>
-        </h2>
-
-        <div class="projects">
-
-            <div class="project">
-                <h3>☀️ Solar Pump</h3>
-
-                <p>
-                    A solar-energy based pumping project
-                    focused on renewable energy and
-                    efficient water pumping.
-                </p>
-
-                <span class="tag">
-                    Electronics
-                </span>
-            </div>
-
-
-            <div class="project">
-                <h3>⚡ Electric Vehicle</h3>
-
-                <p>
-                    An engineering project related to
-                    electric vehicle technology and
-                    modern electrical mobility.
-                </p>
-
-                <span class="tag">
-                    EV Technology
-                </span>
-            </div>
-
-
-            <div class="project">
-                <h3>💻 Coding Project</h3>
-
-                <p>
-                    A programming project focused on
-                    logical thinking, coding and
-                    technical problem solving.
-                </p>
-
-                <span class="tag">
-                    Programming
-                </span>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CAREER -->
-
-    <section id="career">
-
-        <h2 class="title">
-            Career <span>Goals</span>
-        </h2>
-
-        <div class="career">
-
-            <p>
-                I am open to opportunities across technology
-                and engineering domains where I can learn,
-                contribute and grow.
-            </p>
-
-            <div class="career-box">
-
-                <div class="career-item">
-                    IT / Software
-                </div>
-
-                <div class="career-item">
-                    Core ENTC
-                </div>
-
-                <div class="career-item">
-                    Embedded Systems
-                </div>
-
-                <div class="career-item">
-                    VLSI
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-
-    <section id="contact">
-
-        <h2 class="title">
-            Contact <span>Me</span>
-        </h2>
-
-        <div class="contact">
-
-            <p>
-                📧
-                <a href="mailto:ghulemahesh898@gmail.com">
-                    ghulemahesh898@gmail.com
-                </a>
-            </p>
-
-            <p>
-                📱
-                <a href="tel:+919421708693">
-                    +91 9421708693
-                </a>
-            </p>
-
-            <div class="buttons">
-
-                <a
-                    href="mailto:ghulemahesh898@gmail.com"
-                    class="btn"
-                >
-                    Email Me
-                </a>
-
-                <a
-                    href="tel:+919421708693"
-                    class="btn"
-                >
-                    Call Me
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-        © 2026
-        <span>Mahesh Ghule</span>
-        | ENTC Engineer
-    </footer>
+<header>
+  <nav>
+    <h2>Mahesh<span>.</span></h2>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="small">HELLO, I'M</p>
+    <h1>Mahesh <span>Ghule</span></h1>
+    <h2>ENTC Engineering Student</h2>
+
+    <p>
+      Electronics & Telecommunication Engineering student
+      interested in technology, electrical vehicles and solar energy.
+    </p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn second">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="profile">
+    <img src="IMG_20260804_152019~2.jpg" alt="Mahesh Ghule">
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="title">About <span>Me</span></h2>
+
+  <div class="about-box">
+    <p>
+      Hello! I am Mahesh Ghule, an ENTC Engineering student at
+      Dr. Babasaheb Ambedkar Technological University, Lonere.
+      I am passionate about electronics, electrical technology,
+      web development and innovative engineering projects.
+    </p>
+
+    <p>
+      My goal is to develop practical technical skills and create
+      useful projects using modern technology.
+    </p>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="title">My <span>Education</span></h2>
+
+  <div class="card">
+    <h3>🎓 Dr. Babasaheb Ambedkar Technological University</h3>
+    <p>Lonere, Maharashtra</p>
+    <p><strong>Branch:</strong> Electronics & Telecommunication Engineering (ENTC)</p>
+    <p><strong>Year:</strong> 2026</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="title">My <span>Projects</span></h2>
+
+  <div class="project-container">
+
+    <div class="project-card">
+      <div class="icon">☀️</div>
+      <h3>Solar Pump System</h3>
+      <p>
+        A solar-powered pumping concept designed to use renewable
+        energy for agricultural water pumping applications.
+      </p>
+      <span>Solar Energy</span>
+    </div>
+
+    <div class="project-card">
+      <div class="icon">🚗</div>
+      <h3>Electric Vehicle</h3>
+      <p>
+        An electric vehicle project focused on electric mobility,
+        battery power and efficient transportation technology.
+      </p>
+      <span>EV Technology</span>
+    </div>
+
+    <div class="project-card">
+      <div class="icon">💻</div>
+      <h3>Personal Portfolio</h3>
+      <p>
+        A responsive personal portfolio website created using
+        HTML, CSS and JavaScript.
+      </p>
+      <span>Web Development</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="title">My <span>Skills</span></h2>
+
+  <div class="skills">
+
+    <div class="skill">
+      <h3>HTML</h3>
+      <div class="bar"><div style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <h3>CSS</h3>
+      <div class="bar"><div style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <div class="bar"><div style="width:65%"></div></div>
+    </div>
+
+    <div class="skill">
+      <h3>Electronics</h3>
+      <div class="bar"><div style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+      <h3>Electrical Technology</h3>
+      <div class="bar"><div style="width:75%"></div></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="title">Contact <span>Me</span></h2>
+
+  <div class="contact-box">
+
+    <div>
+      <h3>📧 Email</h3>
+      <a href="mailto:ghulemahesh898@gmail.com">
+        ghulemahesh898@gmail.com
+      </a>
+    </div>
+
+    <div>
+      <h3>📱 Phone</h3>
+      <a href="tel:9421708693">
+        +91 9421708693
+      </a>
+    </div>
+
+    <div>
+      <h3>💻 GitHub</h3>
+      <a href="https://github.com/ghulemahesh2509-ops" target="_blank">
+        GitHub Profile
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Mahesh Ghule. All Rights Reserved.</p>
+  <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
-</html>
+                           </html>
