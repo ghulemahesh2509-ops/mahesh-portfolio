@@ -1,39 +1,12 @@
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.querySelector(".nav-links");
+document.addEventListener("DOMContentLoaded", function () {
 
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+  const links = document.querySelectorAll(".nav-links a");
 
-
-document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+      console.log("Opening:", this.textContent);
     });
-});
+  });
 
-
-const skills = document.querySelectorAll(".skill");
-
-const observer = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-
-            const bar = entry.target.querySelector(".bar div");
-
-            bar.style.transition = "width 1.5s ease";
-
-        }
-
-    });
-
-}, {
-    threshold: 0.5
-});
-
-
-skills.forEach(skill => {
-    observer.observe(skill);
+  console.log("Mahesh Portfolio Loaded Successfully 🚀");
 });
