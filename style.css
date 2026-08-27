@@ -760,3 +760,19 @@ footer i {
 .premium-content li:last-child {
   border-bottom: none;
 }
+.btn-premium {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #ffc107;
+  color: #0b1a2e;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: var(--transition);
+}
+
+.btn-premium:hover {
+  background: #ffca2c;
+  transform: translateY(-3px);
+}
