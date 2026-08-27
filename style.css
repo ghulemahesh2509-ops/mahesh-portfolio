@@ -776,3 +776,15 @@ footer i {
   background: #ffca2c;
   transform: translateY(-3px);
 }
+.diary-entry {
+  background: var(--bg);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent);
+}
+
+.diary-entry h3 {
+  color: var(--accent-dark);
+  margin-bottom: 0.3rem;
+}
