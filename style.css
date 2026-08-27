@@ -724,3 +724,39 @@ footer i {
   display: inline-block;
   padding: 0.8rem 2rem;
 }
+/* ===== PREMIUM PAGE ===== */
+.premium-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-left: 6px solid var(--accent);
+}
+
+.premium-container h1 {
+  color: var(--accent-dark);
+  text-align: center;
+}
+
+.premium-content {
+  background: var(--bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.premium-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.premium-content li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.premium-content li:last-child {
+  border-bottom: none;
+}
