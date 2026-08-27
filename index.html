@@ -273,3 +273,15 @@
 <!-- premium.html -->
 <iframe src="https://your-premium-content.com" style="width:100%;height:600px;"></iframe><!-- premium.html -->
 <iframe src="https://your-premium-content.com" style="width:100%;height:600px;"></iframe>
+<!-- Create premium.html -->
+<script>
+  function checkPassword() {
+    var pass = prompt("Enter Premium Access Password:");
+    if (pass === "MAHESH2026") {
+      window.location.href = "premium-content.html";
+    } else {
+      alert("Wrong Password!");
+    }
+  }
+  checkPassword();
+</script>
